@@ -59,7 +59,6 @@ function esconderConsulta() {
 // preenche os campos do formulario 
 function preencherCampos(cep) {
 
-
     document.getElementById('meu_cep').innerHTML = cep.cep
     document.getElementById('logradouro').innerHTML = cep.logradouro
     document.getElementById('complemento').innerHTML = cep.complemento
