@@ -9,35 +9,52 @@ body {
 }
 */
 
-footer {
-    margin-top: 2%;
-    text-align: center;
-}
-
-b {
-    font-size: 1.2em;
-}
-
 h1 {
-    text-align: center;
+  text-align: center;
 }
 
-input[type=text] {
-    width: 15%;
-    height: 25px;
-    margin-top: 10px;
-    display: block;
+input[type="text"] {
+  width: 15%;
+  height: 25px;
+  margin-bottom: 7px;
+  display: block;
 }
 
 button {
-    cursor: pointer;
-    color: gainsboro;
-    background-color: darkgreen;
-    width: 20%;
-    height: 40px;
-    border-radius: 15px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
+  cursor: pointer;
+  color: gainsboro;
+  background-color: darkgreen;
+  width: 15%;
+  height: 32px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+button:hover {
+  background-color: #228b22;
+}
+
+legend{
+  margin-bottom: 1%;
+}
+
+#resposta, #atualizarPagina{
+  display: none;
+}
+
+#atualizarPagina{
+    margin-top:1%;
+}
+
+
+b {
+  font-size: 1.2em;
+}
+
+footer {
+  margin-top: 1%;
+  text-align: center;
 }

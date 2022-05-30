@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="Pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,55 +9,58 @@
     <link rel="stylesheet" type="text/css" href="css/estilo.css">
     <script src="js/cep.js"></script>
 </head>
+
 <body>
-<h1>Faça aqui a consulta do seu CEP</h1>
+    <h1 id="titulo">Realize aqui a consulta do seu CEP</h1>
 
-<!-- Exemplo criado para consultar cep via JavaScript puro -->
-<fieldset name="consulta_js">
-<legend>Consulta Via JavaScript</legend>
-    <form action="" method="POST">
-        <label for="cep">Consulte Seu Cep :</label>
-        <input type="text" maxlength="8" id="cep" name="cep" placeholder="Digite seu Cep"><br>
-    </form>
-    <button onclick="consultarCep()">Consultar</button>
+    <!-- Exemplo criado para consultar cep via JavaScript puro -->
+    <fieldset name="consulta_js" id="consulta">
 
-</fieldset>
+        <legend>Consulta Via JavaScript</legend>
+        <form action="" method="POST">
+            <label for="cep">Cep :</label>
+            <input type="text" maxlength="9" id="cep" name="cep" placeholder="Digite seu Cep">
+        </form>
+        <button onclick="consultarCep()">Consultar</button>
+    </fieldset>
 
-<fieldset>
-<legend>Resposta</legend>
-        <label for="meu_cep">Cep :</label>
-        <input type="text" id="meu_cep" name="meu_cep" readonly>
+    <fieldset id="resposta">
+        <legend>Resposta</legend>
+        <label for="meu_cep"><b>Cep :</b></label>
+        <span id="meu_cep"></span><br>
 
-        <label for="logradouro">Logradouro :</label>
-        <input type="text" id="logradouro" name="logradouro" readonly>
+        <label for="logradouro"> <b>Logradouro :</b> </label>
+        <span id="logradouro"></span><br>
 
-        <label for="complemento">Complemento :</label>
-        <input type="text" id="complemento" name="complemento" readonly>
+        <label for="complemento"> <b>Complemento :</b></label>
+        <span id="complemento"></span><br>
 
-        <label for="bairro">Bairro :</label>
-        <input type="text" id="bairro" name="bairro" readonly>
+        <label for="bairro"> <b>Bairro :</b></label>
+        <span id="bairro"></span><br>
 
-        <label for="localidade">Localidade :</label>
-        <input type="text" id="localidade" name="localidade" readonly>
+        <label for="localidade"> <b>Localidade :</b></label>
+        <span id="localidade"></span><br>
 
-        <label for="uf">Uf :</label>
-        <input type="text" id="uf" name="uf" readonly>
+        <label for="uf"> <b>Uf :</b> </label>
+        <span id="uf"></span><br>
 
-        <label for="ibge">Ibge :</label>
-        <input type="text" id="ibge" name="ibge" readonly>
+        <label for="ibge"> <b>Ibge :</b> </label>
+        <span id="ibge"></span><br>
 
-        <label for="ibge">Gia :</label>
-        <input type="text" id="gia" name="gia" readonly>
+        <label for="gia"> <b>Gia :</b> </label>
+        <span id="gia"></span><br>
 
-        <label for="ddd">DDD :</label>
-        <input type="text" id="ddd" name="ddd" readonly>
+        <label for="ddd"> <b>DDD :</b> </label>
+        <span id="ddd"></span><br>
 
-        <label for="siafi">Siafi :</label>
-        <input type="text" id="siafi" name="siafi" readonly>
-        
-</fieldset>
+        <label for="siafi"> <b>Siafi :</b> </label>
+        <span id="siafi"></span>
 
+    </fieldset>
 
-<footer>Desenvolvido por : <b>Ricardo Ferreira</b> - 02/2020</footer>
+    <button onclick="atualizarPagina()" id="atualizarPagina">Nova Pesquisa</button>
+
+    <footer>Desenvolvido por : <b>Ricardo Ferreira</b> - 05/2022</footer>
 </body>
+
 </html>
