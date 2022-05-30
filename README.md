@@ -18,7 +18,6 @@
 - Digite : php -S localhost:8181 - (se preferir pode escolher outra porta)
 
 <h3>Imagens</h3>
-
 <div>
     <img align="center"  src="https://github.com/RicardoFV/consulta_cep/blob/main/documento/tela_incial.PNG?raw=true"><br/><br/>
     <img align="center"  src="https://github.com/RicardoFV/consulta_cep/blob/main/documento/resposta.PNG?raw=true">  
